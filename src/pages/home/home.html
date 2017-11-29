@@ -7,8 +7,10 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+	<p>{{key}} Attempt : {{number}}</p>
+
+<button ion-button (click)="stopCount()">Stop request</button>
+<button ion-button (click)="postHttp()">Request key</button>
+<button ion-button (click)="moveToBackground()">Turn on background mode</button>
 </ion-content>
+
